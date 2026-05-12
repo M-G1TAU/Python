@@ -1,0 +1,18 @@
+def calculate_love_score(name1,name2):
+    combined_names=(name1+name2).lower()
+    check1="true"
+    check2="love"
+    count1=0
+    count2=0
+    for char in combined_names:
+        if char in check1:
+             count1+=1
+
+    for char in combined_names:
+        if char in check2:
+            count2+=1
+
+    print(f"{count1}{count2}")
+
+
+calculate_love_score("Morris Gitau", "Sonia Ndike")
